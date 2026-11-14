@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birthday card for Duyen Hong</title>
+<style>
+:root{--ink:#3e3a5c;--pink:#f29bbb;--blue:#7db8ee;--paper:#fbf8f3;--lilac:#c9b3ee}
+*{box-sizing:border-box}
+body{margin:0;background:#f3ede6;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+.wrap{max-width:520px;margin:auto;padding:16px}
+.page{animation:fade .4s ease-out}
+svg{display:block;width:100%;height:auto;background:var(--paper);border-radius:12px;overflow:visible}
+.row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:12px 0 22px}
+button{padding:10px 16px;border:1px solid #a9b4cc;border-radius:8px;background:white;color:var(--ink);font:15px Georgia;cursor:pointer}
+button:hover{background:#fbf8f3}
+#cv{cursor:pointer}
+#cv.play #dog{animation:jump .8s ease-out}
+#cv.play #hat{animation:wobble 1s ease-in-out}
+#cv.play #tail{animation:wag .16s ease-in-out 8 alternate}
+#cv.play #ears{animation:flap .6s ease-in-out 2}
+#cv.play #bubble{animation:pop 1.5s ease-out}
+#cv.play #tongue{animation:showtongue 1s}
+.bal{animation:bob 2.2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+@keyframes jump{0%,100%{transform:translateY(0)}35%{transform:translateY(-28px)}60%{transform:translateY(0)}78%{transform:translateY(-10px)}}
+@keyframes wobble{0%,100%{transform:rotate(0)}25%{transform:rotate(-10deg)}50%{transform:rotate(8deg)}75%{transform:rotate(-5deg)}}
+@keyframes wag{from{transform:rotate(-16deg)}to{transform:rotate(18deg)}}
+@keyframes flap{0%,100%{transform:rotate(0)}50%{transform:rotate(8deg)}}
+@keyframes pop{0%,100%{opacity:0;transform:scale(.4)}20%,75%{opacity:1;transform:scale(1)}}
+@keyframes showtongue{0%,100%{opacity:0}20%,80%{opacity:1}}
+@keyframes bob{to{transform:translateY(-10px)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.card,.handle,.deco{touch-action:none;cursor:grab}
+.inside-bg{fill:var(--paper)}
+.card{transition:transform .7s cubic-bezier(.3,.7,.3,1)}
+.deco{user-select:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section id="cover" class="page">
+<svg id="cv" viewBox="0 0 480 360" role="button" tabindex="0" aria-label="Tap the puppy to celebrate">
+<rect width="480" height="360" rx="12" fill="#fbf8f3"/>
+<path d="M35 180C20 120 100 90 170 110S280 160 250 220 120 300 70 270 50 210 35 180Z" fill="#f4a6c0" opacity=".25"/>
+<path d="M230 120C290 90 400 100 430 150S420 270 360 280 230 275 225 220 220 140 230 120Z" fill="#8ec5f0" opacity=".25"/>
+<path d="M20 24Q240 56 460 24" fill="none" stroke="#a9b4cc"/>
+<g fill="#f29bbb" opacity=".8"><path d="M48 29h24L60 51Z"/><path d="M148 38h24l-12 22Z"/><path d="M248 40h24l-12 22Z"/><path d="M348 35h24l-12 22Z"/></g>
+<g fill="#7db8ee" opacity=".8"><path d="M98 34h24l-12 22Z"/><path d="M198 40h24l-12 22Z"/><path d="M298 38h24l-12 22Z"/><path d="M398 30h24l-12 22Z"/></g>
+<g class="bal"><path d="M62 180Q70 240 80 310" fill="none" stroke="#a9b4cc"/><ellipse cx="62" cy="150" rx="24" ry="30" fill="#f29bbb"/><path d="M58 182l4-5 4 5Z" fill="#e26a9a"/></g>
+<g class="bal"><path d="M100 143Q96 230 92 310" fill="none" stroke="#a9b4cc"/><ellipse cx="100" cy="118" rx="20" ry="25" fill="#ffe08a"/><path d="M96 143l4 5 4-5Z" fill="#e8c48a"/></g>
+<g class="bal"><path d="M420 172Q412 240 402 310" fill="none" stroke="#a9b4cc"/><ellipse cx="420" cy="142" rx="24" ry="30" fill="#7db8ee"/><path d="M416 172l4 5 4-5Z" fill="#5c8fd6"/></g>
+<ellipse cx="240" cy="338" rx="100" ry="11" fill="#b8c3da" opacity=".5"/>
+<g id="dog">
+<g id="tail"><path d="M296 300Q338 292 334 252" fill="none" stroke="#8e9bba" stroke-width="14" stroke-linecap="round"/><path d="M296 300Q338 292 334 252" fill="none" stroke="white" stroke-width="11" stroke-linecap="round"/></g>
+<ellipse cx="240" cy="262" rx="66" ry="72" fill="white" stroke="#8e9bba" stroke-width="1.5"/>
+<ellipse cx="198" cy="326" rx="24" ry="12" fill="white" stroke="#8e9bba"/><ellipse cx="282" cy="326" rx="24" ry="12" fill="white" stroke="#8e9bba"/>
+<path d="M188 208Q240 196 292 208L296 300H184Z" fill="#7a8fd0" stroke="#5b6aa0"/>
+<path d="M222 204h36l-18 44Z" fill="white" stroke="#5b6aa0"/>
+<path d="M218 204l22 46-26-14Zm44 0-22 46 26-14Z" fill="#6a7dbe" stroke="#5b6aa0"/>
+<path d="M240 210l-15-9v18Zm0 0 15-9v18Z" fill="#f29bbb" stroke="#e26a9a"/><circle cx="240" cy="210" r="3.5" fill="#e26a9a"/>
+<path d="M194 212Q150 220 152 288M286 212Q330 220 328 288" fill="none" stroke="#7a8fd0" stroke-width="18" stroke-linecap="round"/>
+<rect x="150" y="252" width="180" height="70" rx="6" fill="#fffdf8" stroke="#e26a9a" stroke-width="1.5"/>
+<rect x="157" y="259" width="166" height="56" rx="4" fill="none" stroke="#c9b3ee" stroke-dasharray="3 3"/>
+<text x="240" y="283" text-anchor="middle" fill="#e26a9a" font-size="19" font-weight="bold">Happy Birthday</text>
+<text x="240" y="307" text-anchor="middle" fill="#5c8fd6" font-size="20" font-weight="bold">Duyen Hong</text>
+<g id="ears"><ellipse cx="188" cy="150" rx="17" ry="36" transform="rotate(12 188 150)" fill="#e8c9a6" stroke="#8e9bba" stroke-width="1.5"/><ellipse cx="292" cy="150" rx="17" ry="36" transform="rotate(-12 292 150)" fill="#e8c9a6" stroke="#8e9bba" stroke-width="1.5"/></g>
+<ellipse cx="240" cy="148" rx="58" ry="50" fill="white" stroke="#8e9bba" stroke-width="1.5"/>
+<ellipse cx="222" cy="138" rx="14" ry="13" fill="#e8c9a6" opacity=".8"/>
+<circle cx="222" cy="140" r="4.5" fill="#3e3a5c"/><circle cx="258" cy="140" r="4.5" fill="#3e3a5c"/>
+<circle cx="223.5" cy="138.5" r="1.5" fill="white"/><circle cx="259.5" cy="138.5" r="1.5" fill="white"/>
+<circle cx="206" cy="162" r="7" fill="#f29bbb" opacity=".35"/><circle cx="274" cy="162" r="7" fill="#f29bbb" opacity=".35"/>
+<ellipse cx="240" cy="166" rx="24" ry="17" fill="#fff3ec" stroke="#8e9bba"/>
+<path d="M240 163v7m0 0q-9 8-16 1m16-1q9 8 16 1" fill="none" stroke="#3e3a5c" stroke-width="1.5" stroke-linecap="round"/>
+<ellipse cx="240" cy="158" rx="8" ry="5.5" fill="#3e3a5c"/>
+<path id="tongue" d="M234 174Q240 192 246 174Z" fill="#f29bbb" opacity="0"/>
+<g id="hat"><path d="M212 104h56l-28-66Z" fill="#f7b6cf" stroke="#8e9bba"/><circle cx="240" cy="68" r="3" fill="#7db8ee"/><circle cx="232" cy="86" r="3" fill="#7db8ee"/><circle cx="248" cy="86" r="3" fill="white"/><ellipse cx="240" cy="104" rx="30" ry="5" fill="#9cc8f0"/><circle cx="240" cy="36" r="6" fill="#ffe08a"/></g>
+</g>
+<g id="bubble" opacity="0"><rect x="318" y="72" width="84" height="40" rx="14" fill="white" stroke="#e26a9a"/><text x="360" y="98" text-anchor="middle" fill="#e26a9a" font-size="18" font-weight="bold">Woof!</text></g>
+<g id="confetti"></g>
+</svg>
+<div class="row"><button id="open">Open the card</button></div>
+</section>
+
+<section id="inside" class="page" hidden>
+<svg id="scene" viewBox="0 100 480 290" aria-label="A birthday cake with three pull-out messages and draggable decorations">
+<rect x="0" y="100" width="480" height="290" rx="12" fill="#fbf8f3"/>
+<path d="M60 250C40 200 120 180 180 190S290 230 260 280 130 340 90 315 70 270 60 250Z" fill="#f4a6c0" opacity=".25"/>
+<path d="M230 200C290 175 400 180 430 225S420 325 360 330 230 325 225 280 220 215 230 200Z" fill="#8ec5f0" opacity=".25"/>
+<path d="M22 377Q110 371 290 375T458 376" fill="none" stroke="#b8c3da" stroke-width="5" opacity=".5"/>
+<g id="c2" class="card"><line x1="298" y1="239" x2="328" y2="239" stroke="#f9b8d0" stroke-width="3"/><rect x="182" y="226" width="116" height="26" rx="5" fill="#fffdf8" stroke="#c9b3ee"/><text x="240" y="244" text-anchor="middle" fill="#9a7fd0" font-size="16" font-weight="bold">Duyen Hong</text></g>
+<g id="c1" class="card"><line x1="193" y1="203" x2="168" y2="203" stroke="#8ec5f0" stroke-width="3"/><rect x="193" y="191" width="94" height="24" rx="5" fill="#fffdf8" stroke="#b5d3f0"/><text x="240" y="208" text-anchor="middle" fill="#5c8fd6" font-size="17" font-weight="bold">Birthday</text></g>
+<g id="c0" class="card"><line x1="273" y1="167" x2="297" y2="167" stroke="#f29bbb" stroke-width="3"/><rect x="207" y="155" width="66" height="24" rx="5" fill="#fffdf8" stroke="#f0b3cb"/><text x="240" y="173" text-anchor="middle" fill="#e26a9a" font-size="18" font-weight="bold">Happy</text></g>
+<path d="M170 256h140l-25 118h-90Z" fill="#f7b6cf" stroke="#8e9bba"/><path d="M242 256h68l-25 118h-43Z" fill="#9cc8f0"/><path d="M236 256h8v118h-8Z" fill="#c9b3ee"/>
+<path d="M178 297h124l-5 20H183Z" fill="#fff3d0"/>
+<rect x="164" y="252" width="152" height="8" rx="4" fill="white" stroke="#a9b4cc"/>
+<rect x="164" y="220" width="152" height="38" rx="19" fill="#fffdfb" stroke="#f0b3cb" stroke-width="1.2"/>
+<path d="M176 246q64 12 128-2" fill="none" stroke="#f0b3cb"/>
+<rect x="180" y="184" width="120" height="38" rx="19" fill="#fffdfb" stroke="#b5d3f0" stroke-width="1.2"/>
+<path d="M190 210q50 12 102-2" fill="none" stroke="#b5d3f0"/>
+<path d="M222 150q18-28 36 0Z" fill="#fffdfb" stroke="#d3c3f0"/><rect x="195" y="148" width="90" height="38" rx="19" fill="#fffdfb" stroke="#d3c3f0" stroke-width="1.2"/>
+<g id="k2" class="handle"><circle cx="328" cy="239" r="16" fill="transparent"/><circle cx="328" cy="239" r="9" fill="#f9b8d0"/><circle cx="328" cy="239" r="5" fill="none" stroke="#8ec5f0" stroke-width="2.5"/></g>
+<g id="k1" class="handle"><circle cx="168" cy="203" r="16" fill="transparent"/><path d="M162 203l-8-5v10Zm12 0 8-5v10Z" fill="#f7b6cf"/><circle cx="168" cy="203" r="6" fill="#9cc8f0"/></g>
+<g id="k0" class="handle"><circle cx="297" cy="167" r="16" fill="transparent"/><circle cx="297" cy="167" r="8" fill="#e5486f"/><circle cx="294" cy="164" r="2" fill="white"/></g>
+<g id="decor">
+<g class="deco"><rect x="60" y="362" width="56" height="12" fill="#f8ddb0"/><rect x="60" y="350" width="56" height="8" fill="#f7b6cf"/><path d="M60 346q28-14 56 0Z" fill="white"/><circle cx="88" cy="338" r="5" fill="#e5486f"/></g>
+<g class="deco"><circle cx="368" cy="364" r="9" fill="#9cc8f0"/><path d="M359 364l-12-8v16Zm18 0 12-8v16Z" fill="#f7b6cf"/></g>
+<g class="deco"><path d="M60 142l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#f29bbb"/></g>
+<g class="deco"><path d="M420 136l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#7db8ee"/></g>
+</g>
+</svg>
+<div class="row">
+<button id="toggle">Open all three</button><button id="add">Add sprinkle</button><button id="reset">Reset decorations</button><button id="back">Back to cover</button>
+</div>
+</section>
+</div>
+<script>
+const cover=document.querySelector('#cover'),inside=document.querySelector('#inside'),cv=document.querySelector('#cv');
+document.querySelector('#open').onclick=()=>{cover.hidden=true;inside.hidden=false};
+document.querySelector('#back').onclick=()=>{inside.hidden=true;cover.hidden=false};
+function celebrate(){cv.classList.remove('play');void cv.getBoundingClientRect();cv.classList.add('play');burst()}
+cv.addEventListener('click',celebrate);cv.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();celebrate()}});
+function burst(){const layer=document.querySelector('#confetti'),colors=['#f29bbb','#7db8ee','#ffe08a','#b5e8d0','#c9b3ee'];for(let i=0;i<28;i++){const dot=Math.random()<.4,e=document.createElementNS('http://www.w3.org/2000/svg',dot?'circle':'rect'),s=4+Math.random()*4;e.setAttribute(dot?'r':'width',dot?s/2+1:s*1.6);if(!dot)e.setAttribute('height',s);e.setAttribute('fill',colors[Math.floor(Math.random()*colors.length)]);layer.append(e);const x=240+(Math.random()-.5)*55,y=60,vx=(Math.random()-.5)*3.5,vy=-(1+Math.random()*2.5),t0=performance.now();function frame(t){const n=(t-t0)/16.67;e.setAttribute('transform',`translate(${x+vx*n},${y+vy*n+.03*n*n}) rotate(${n*7})`);e.setAttribute('opacity',Math.max(0,1-(t-t0)/1700));if(t-t0<1700)requestAnimationFrame(frame);else e.remove()}requestAnimationFrame(frame)}}
+const max=[82,111,138],dir=[1,-1,1],pos=[0,0,0],cards=[0,1,2].map(i=>document.querySelector('#c'+i)),handles=[0,1,2].map(i=>document.querySelector('#k'+i)),scene=document.querySelector('#scene');
+function setPos(i,v){pos[i]=Math.max(0,Math.min(max[i],v));const tr=`translate(${dir[i]*pos[i]}px,0px)`;cards[i].style.transform=tr;handles[i].style.transform=tr;document.querySelector('#toggle').textContent=pos.every((p,i)=>p>max[i]/2)?'Close all three':'Open all three'}
+function dragX(el,i){let down=false,x=0,p=0,moved=false;el.addEventListener('pointerdown',e=>{down=true;x=e.clientX;p=pos[i];moved=false;el.setPointerCapture(e.pointerId);cards[i].style.transition='none';handles[i].style.transition='none'});el.addEventListener('pointermove',e=>{if(!down)return;const k=480/scene.getBoundingClientRect().width,dx=(e.clientX-x)*k*dir[i];if(Math.abs(dx)>3)moved=true;setPos(i,p+dx)});function end(){if(!down)return;down=false;cards[i].style.transition='';handles[i].style.transition='';setPos(i,pos[i]>max[i]/2?max[i]:0)}el.addEventListener('pointerup',end);el.addEventListener('pointercancel',end)}
+for(let i=0;i<3;i++){dragX(cards[i],i);dragX(handles[i],i)}
+document.querySelector('#toggle').onclick=()=>{const open=!pos.every((p,i)=>p>max[i]/2);for(let i=0;i<3;i++)setPos(i,open?max[i]:0)};
+const layer=document.querySelector('#decor');
+function bindDeco(el){let down=false,x=0,y=0,tx=0,ty=0;el._tx=0;el._ty=0;el.addEventListener('pointerdown',e=>{down=true;x=e.clientX;y=e.clientY;tx=el._tx;ty=el._ty;el.setPointerCapture(e.pointerId)});el.addEventListener('pointermove',e=>{if(!down)return;const k=480/scene.getBoundingClientRect().width;el._tx=tx+(e.clientX-x)*k;el._ty=ty+(e.clientY-y)*k;el.style.transform=`translate(${el._tx}px,${el._ty}px)`});const end=()=>down=false;el.addEventListener('pointerup',end);el.addEventListener('pointercancel',end)}
+layer.querySelectorAll('.deco').forEach(bindDeco);
+document.querySelector('#add').onclick=()=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.classList.add('deco');const x=35+Math.random()*70,y=200+Math.random()*90,c=['#f29bbb','#7db8ee','#ffe08a','#b5e8d0','#c9b3ee'][Math.floor(Math.random()*5)];const line=document.createElementNS('http://www.w3.org/2000/svg','line');Object.entries({x1:x-3,y1:y-2,x2:x+3,y2:y+2,stroke:c,'stroke-width':3,'stroke-linecap':'round'}).forEach(([k,v])=>line.setAttribute(k,v));g.append(line);g.dataset.extra='1';layer.append(g);bindDeco(g)};
+document.querySelector('#reset').onclick=()=>{layer.querySelectorAll('.deco').forEach(el=>{if(el.dataset.extra)el.remove();else{el._tx=el._ty=0;el.style.transform='translate(0px,0px)'}})};
+</script>
+</body>
+</html>
